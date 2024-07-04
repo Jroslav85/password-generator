@@ -15,13 +15,18 @@ public class CommandParser {
 		commands = Map.of(commandHelp.getStringRepresentation(), commandHelp,
 				commandHelp.getShortStringRepresentation(), commandHelp,
 				commandGenerate.getStringRepresentation(), commandGenerate,
-				commandGenerate.getShortStringRepresentation(), commandGenerate);
+				commandGenerate.getShortStringRepresentation(),
+				commandGenerate);
 	}
 
 	public void parse(final String... strings) {
 		for (String string : strings) {
-			Command command = commands.get(string);
-			command.execute();
+			try {
+				Command command = commands.get(string);
+				command.execute();
+			} catch (NullPointerException e) {
+				System.out.println("there is no such command");
+			}
 		}
 	}
 }
