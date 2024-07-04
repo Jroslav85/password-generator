@@ -1,6 +1,6 @@
 package com.jroslav.passj.command;
 
-public class CommandHelp extends Command implements Executable {
+public class CommandHelp extends Command {
 
 	public CommandHelp() {
 		stringRepresentation = "help";
