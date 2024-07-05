@@ -1,6 +1,7 @@
 package com.jroslav.passj.command;
 
 public abstract class Command implements Executable{
+	
 	protected String stringRepresentation;
 	protected String shortStringRepresentation;
 	

@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class CommandGenerate extends Command {
+	
 	private String upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	private String lower = "abcdefghijklmnopqrstuvwxyz";
 	private String numbers = "0123456789";

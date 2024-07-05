@@ -6,12 +6,13 @@ import com.jroslav.passj.command.Command;
 import com.jroslav.passj.command.CommandGenerate;
 import com.jroslav.passj.command.CommandHelp;
 
-public class CommandParser {
+public class StringParser {
+	
 	private final Map<String, Command> commands;
 	private final Command commandHelp = new CommandHelp();
 	private final Command commandGenerate = new CommandGenerate();
 
-	public CommandParser() {
+	public StringParser() {
 		commands = Map.of(commandHelp.getStringRepresentation(), commandHelp,
 				commandHelp.getShortStringRepresentation(), commandHelp,
 				commandGenerate.getStringRepresentation(), commandGenerate,
