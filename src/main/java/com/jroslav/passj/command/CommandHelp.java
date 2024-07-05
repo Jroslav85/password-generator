@@ -9,6 +9,6 @@ public class CommandHelp extends Command {
 
 	@Override
 	public void execute() {
-		System.out.println("help program");
+		System.out.println("To generate a password, enter the command: <generate> or <g>");
 	}
 }
